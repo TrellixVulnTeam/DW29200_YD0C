@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Lado Oscuro</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navegacion">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="nosotros.html"> Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="envio.html">Envíos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="titulo">CONTACTO</h1>
+
+    <section id="grid_contacto">
+
+      <div class="card">
+        <p>
+          Para comunicarte con nosotros completa el formulario. Respondemos
+          todos los mensajes que nos llegan!
+        </p>
+      </div>
+
+    <form class="card">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required />
+        </div>
+
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" />
+        </div>
+
+        <div>
+          <label for="e-mail">Email</label>
+          <input type="email" id="e-mail" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu mensaje:</legend>
+        <div>
+          <textarea placeholder="Dejanos tu mensaje acá"></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        Querés subscribirte al newsletter?
+        <label for="si">Sí</label>
+        <input type="radio" name="opciones" id="si" />
+
+        <label for="no">No</label>
+        <input type="radio" name="opciones" id="no"
+      </div>
+      <input type="submit" value="ENVIAR" />
+    </form>
+  </section>
+
+    <hr />
+    <footer class="footer"><p>TODOS LOS DERECHOS RESERVADOS 2022</p></footer>
+  </body>
+</html>
