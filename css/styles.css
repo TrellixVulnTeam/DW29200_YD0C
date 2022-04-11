@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+
+.titulo {
+  font-family: "Advent Pro";
+  font-size: 8rem;
+  text-align: center;
+}
+
+.footer {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-align: center;
+}
+
+section div {
+  height: 200px;
+  width: 200px;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  color: rgb(20, 20, 82);
+  font-size: 8rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+section div p {
+  background-color: azure;
+  font-size: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  background-color: rgba(255, 198, 43, 0.637);
+  top: 0;
+  z-index: 1;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 0.5;
+}
+
+form {
+  font-size: 2rem;
+  font-family: "Montserrat";
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content:center;
+  width: 60%;
+  height: 550px;
+  margin: 0 auto auto auto;
+  padding: 100px 160px;
+  overflow: hidden;
+  border: solid 4px rgb(9, 9, 136);
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 60%;
+  padding: 300px;
+  margin-top: 50px;
+
+ }
+
+.card_texto {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 100%;
+  margin-top: 3px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 7px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 100%;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+nav {
+  padding: 3px;
+  margin: 3px;
+  margin-left: 3px;
+}
+
+nav li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+
+footer{
+  flex:1;
+  padding: 3rem;
+  margin: 3px;}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding: 1em;}
+
+  .grid_productos {  
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "nav titulo1 titulo2"
+      "nav foto1 foto2"
+      "nav descripcion1 descripcion2";
+      grid-template-columns: 5fr 5fr;
+      grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
+      gap: 5px;
+  }
+  
+  .foto1 { grid-area: foto1; }
+  
+  .foto2 { grid-area: foto2; }
+  
+  .titulo1 { grid-area: titulo1; }
+  
+  .titulo2 { grid-area: titulo2; }
+  
+  .descripcion1 { grid-area: descripcion1; }
+  
+  .descripcion2 { grid-area: descripcion2; }
+
+
+@media screen and (min-width: 576px) {
+  .grid_productos { display: grid;
+    grid-template-columns: repeat(2, 3fr); }
+  body {  background-color: red; }
+  h1 {font-size: 90px;}
+  }
+
+
+#grid_nosotros {
+  display:grid;
+  grid-template-areas:
+  "nav foto foto"
+  "nav descripcion descripcion";
+  grid-template-columns: 1fr 1fr;
+justify-content: center;}
+
+.imagen_qs {
+  grid-area: foto;
+  }
+
+p {
+  grid-area: descripcion;     
+  }
+
+.imagen_qs {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+#grid_contacto {
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: 3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nav texto texto"
+    "nav formulario formulario";
+}
+
+form {
+  grid-area: formulario ;
+}
+
+div {
+  grid-area: texto;
+}
+
+.flex_envios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {  background-color: #000000; }
+  h1 {font-size: 90px;}
+  }
