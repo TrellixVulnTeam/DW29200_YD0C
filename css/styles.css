@@ -37,7 +37,7 @@ section div {
   text-align: center;
 }
 
-h1 {
+.titulo {
   display: flex;
   color: rgb(20, 20, 82);
   font-size: 8rem;
@@ -52,20 +52,21 @@ section div p {
 
 ul {
   list-style-type: none;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Montserrat";
   background-color: rgba(255, 198, 43, 0.637);
-  top: 0;
+  padding: 10px 10px 10px 10px;
+  top: 3px;
   z-index: 1;
 }
 
-.navegacion {
+/*.navegacion {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:stretch;
   position: sticky;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -75,11 +76,11 @@ a {
 }
 
 form {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Montserrat";
 }
 
-.card {
+card_t {
   display: flex;
   flex-direction: column;
   align-content: stretch;
@@ -117,23 +118,18 @@ h2 {
 }
 
 button {
-  border-radius: 7px;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
+
   font-family: "Montserrat";
   font-size: 2rem;
-  line-height: 100%;
-  margin-top: 3px;
-  text-align: center;
+
 }
 
-.navegacion {
+/*.navegacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-}
+}*/
 
 nav {
   padding: 3px;
@@ -145,7 +141,7 @@ nav li a {
   color: black;
   display: block;
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
 }
 
 
@@ -166,7 +162,7 @@ body {
 }
 
 
-  .grid_productos {  
+/*.grid_productos {  
     display: grid;
     width: 100%;
     grid-template-areas:
@@ -189,7 +185,7 @@ body {
   .descripcion1 { grid-area: descripcion1; }
   
   .descripcion2 { grid-area: descripcion2; }
-
+*/
 
 @media screen and (min-width: 576px) {
   .grid_productos { display: grid;
@@ -199,7 +195,7 @@ body {
   }
 
 
-#grid_nosotros {
+/*#grid_nosotros {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -211,7 +207,7 @@ body {
 
 .foto { grid-area: foto;}
 
-.card {grid-area: descripcion;}
+.card {grid-area: descripcion;} */
 
 .flex_envios {
   display: flex;
@@ -224,7 +220,7 @@ iframe:hover { transform: scale(2); }
 
 .navegacion li:hover {
   background-color:rgba(0,212,255,1);
-  padding: 10px 20 px;
+  padding: 20px 30 px;
 }
 
 input {
@@ -245,12 +241,24 @@ textarea:focus {
   font-size: 20px;
 }
 
-.flex_contacto {
+/*.flex_contacto {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
+}*/
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: contain;
 }
+
+
+.formulario {
+  padding-top: 10px;
+}
+
 
 @media screen and (min-width: 768px) {
   body {  background-color: #000000; }
