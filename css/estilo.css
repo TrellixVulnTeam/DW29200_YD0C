@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Montserrat:wght@200&display=swap");
+.flex, body, .titulo, ul .card_t, ul .flex_envios, ul .tarjeta1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #31393c;
+  background: linear-gradient(90deg, #020024 0%, #ffe5c4 70%, #00d4ff 100%);
+  height: 100vh; }
+
+h1 {
+  font-family: "Advent Pro";
+  font-size: 2rem;
+  color: beige;
+  text-align: center; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0; }
+
+.footer {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-align: center; }
+
+section div {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  text-align: center; }
+  section div p {
+    font-size: 4rem; }
+
+.titulo {
+  color: #141452;
+  font-size: 6rem; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    background-color: #fdca40;
+    padding: 8px;
+    top: 3px;
+    z-index: 1; }
+    ul li a {
+      font-family: "Montserrat";
+      font-size: 2rem;
+      line-height: 0.5; }
+      ul li a:hover {
+        background-color: #2176ff;
+        padding: 30px 30px; }
+  ul form {
+    font-family: "Montserrat";
+    font-size: 4rem; }
+  ul .card_t {
+    align-content: stretch;
+    width: 60%;
+    height: 550px;
+    margin: 0 auto auto auto;
+    padding: 100px 160px;
+    overflow: hidden;
+    border: solid 4px #090988; }
+  ul .card-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60%;
+    padding: 300px;
+    margin-top: 50px; }
+  ul .card_texto {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    line-height: 100%;
+    margin-top: 3px;
+    text-align: center; }
+  ul h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px; }
+  ul button {
+    font-family: "Montserrat";
+    font-size: 2rem; }
+  ul nav {
+    padding: 3px;
+    margin: 3px;
+    margin-left: 3px; }
+    ul nav li {
+      color: black;
+      display: block;
+      text-decoration: none;
+      padding: 1em 2em; }
+  ul footer {
+    flex: 1;
+    padding: 3rem;
+    margin: 3px; }
+  ul .navegacion li:hover {
+    background-color: #2176ff;
+    padding: 30px 40 px; }
+  ul input {
+    transition: all 0.5s; }
+  ul input:focus {
+    width: 300px;
+    font-size: 3rem; }
+  ul textarea {
+    transition: all 0.5s; }
+  ul textarea:focus {
+    width: 300px;
+    font-size: 3rem; }
+  ul .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: contain; }
+  ul .formulario {
+    padding-top: 10px; }
+  ul .tarjeta1 {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    justify-content: stretch;
+    z-index: 2;
+    font-size: 300rem; }
+  @media screen and (min-width: 768px) {
+    ul body {
+      background-color: #000000; }
+    ul h1 {
+      font-family: "Advent Pro";
+      font-size: 10rem; } }
+
+@media screen and (min-width: 576px) {
+  .grid_productos {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr); }
+  body {
+    background-color: red; }
+  h1 {
+    font-family: "Montserrat";
+    font-size: 3rem; } }
