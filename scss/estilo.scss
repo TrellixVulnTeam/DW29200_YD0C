@@ -41,12 +41,13 @@ header {
 }
 
 section {
+  @extend.flex;
   div {
-    @include estilo($texto, 3rem);
+    @include estilo($texto, 2rem);
     text-align: center;
 
     p {
-      font-size: 4rem;
+      font-size: 2rem;
     }
   }
 }
@@ -54,7 +55,7 @@ section {
 .titulo {
   @extend.flex;
   color: rgb(20, 20, 82);
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 ul {
@@ -80,30 +81,17 @@ ul {
     @include estilo($texto, 4rem);
   }
 
-  .card_t {
-    @extend.flex;
-    align-content: stretch;
-    width: 60%;
-    height: 550px;
-    margin: 0 auto auto auto;
-    padding: 100px 160px;
-    overflow: hidden;
-    border: solid 4px rgb(9, 9, 136);
-  }
-
   .card-flex {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     height: 60%;
     padding: 300px;
     margin-top: 50px;
   }
 
-  .card_texto {
+  .card-text {
     font-family: "Montserrat";
-    font-size: 2rem;
-    line-height: 100%;
+    font-size: 1rem;
     margin-top: 3px;
     text-align: center;
   }
@@ -164,12 +152,6 @@ ul {
     font-size: 3rem;
   }
 
-  .card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: contain;
-  }
-
   .formulario {
     padding-top: 10px;
   }
@@ -184,24 +166,11 @@ ul {
     font-size: 300rem;
   }
 
-  @media screen and (min-width: 768px) {
-    body {
-      background-color: #000000;
-    }
-    h1 {
-      @include estilo($titulo, 10rem);
-    }
+  .titulo {
+    padding-top: 3px;
   }
-}
-@media screen and (min-width: 576px) {
-  .grid_productos {
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-  }
-  body {
-    background-color: red;
-  }
-  h1 {
-    @include estilo($texto, 3rem);
+
+  .tarjeta1 {
+    margin-top: 33px;
   }
 }
