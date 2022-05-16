@@ -41,6 +41,7 @@ header {
 }
 
 section {
+
   @extend.flex;
   div {
     @include estilo($texto, 2rem);
@@ -48,6 +49,7 @@ section {
 
     p {
       font-size: 2rem;
+
     }
   }
 }
@@ -81,6 +83,7 @@ ul {
     @include estilo($texto, 4rem);
   }
 
+
   .card-flex {
     display: flex;
     flex-direction: column;
@@ -88,6 +91,7 @@ ul {
     padding: 300px;
     margin-top: 50px;
   }
+
 
   .card-text {
     font-family: "Montserrat";
@@ -172,5 +176,6 @@ ul {
 
   .tarjeta1 {
     margin-top: 33px;
+
   }
 }

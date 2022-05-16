@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Montserrat:wght@200&display=swap");
+
 .flex, body, section, .titulo, ul .flex_envios, ul .tarjeta1 {
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@ ul {
   ul form {
     font-family: "Montserrat";
     font-size: 4rem; }
+
   ul .card-flex {
     display: flex;
     flex-direction: column;
@@ -105,6 +107,7 @@ ul {
   ul textarea:focus {
     width: 300px;
     font-size: 3rem; }
+
   ul .formulario {
     padding-top: 10px; }
   ul .tarjeta1 {
@@ -114,7 +117,9 @@ ul {
     justify-content: stretch;
     z-index: 2;
     font-size: 300rem; }
+
   ul .titulo {
     padding-top: 3px; }
   ul .tarjeta1 {
     margin-top: 33px; }
+
