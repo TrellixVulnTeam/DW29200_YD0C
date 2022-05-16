@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Montserrat:wght@200&display=swap");
+$color-texto: #31393c;
+$color-titulo: beige;
+$texto: "Montserrat";
+$titulo: "Advent Pro";
+
+@mixin estilo($fuente, $tamano) {
+  font-family: $fuente;
+  font-size: $tamano;
+}
