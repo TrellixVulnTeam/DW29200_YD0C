@@ -1,0 +1,176 @@
+@import "variables";
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-texto;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 229, 196, 1) 70%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  @extend.flex;
+  height: 100vh;
+}
+
+h1 {
+  @include estilo($titulo, 2rem);
+  color: $color-titulo;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.footer {
+  @include estilo($texto, 1rem);
+  text-align: center;
+}
+
+section {
+  @extend.flex;
+  div {
+    @include estilo($texto, 2rem);
+    text-align: center;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.titulo {
+  @extend.flex;
+  color: rgb(20, 20, 82);
+  font-size: 5rem;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    @include estilo($texto, 2rem);
+    background-color: #fdca40;
+    padding: 8px;
+    top: 3px;
+    z-index: 1;
+
+    a {
+      @include estilo($texto, 2rem);
+      line-height: 0.5;
+      &:hover {
+        background-color: #2176ff;
+        padding: 30px 30px;
+      }
+    }
+  }
+
+  form {
+    @include estilo($texto, 4rem);
+  }
+
+  .card-flex {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    padding: 300px;
+    margin-top: 50px;
+  }
+
+  .card-text {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    margin-top: 3px;
+    text-align: center;
+  }
+
+  h2 {
+    @include estilo($texto, 3rem);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  button {
+    @include estilo($texto, 2rem);
+  }
+
+  nav {
+    padding: 3px;
+    margin: 3px;
+    margin-left: 3px;
+
+    li {
+      color: black;
+      display: block;
+      text-decoration: none;
+      padding: 1em 2em;
+    }
+  }
+
+  footer {
+    flex: 1;
+    padding: 3rem;
+    margin: 3px;
+  }
+
+  .flex_envios {
+    @extend.flex;
+  }
+
+  .navegacion li:hover {
+    background-color: #2176ff;
+    padding: 30px 40 px;
+  }
+
+  input {
+    transition: all 0.5s;
+  }
+
+  input:focus {
+    width: 300px;
+    font-size: 3rem;
+  }
+
+  textarea {
+    transition: all 0.5s;
+  }
+
+  textarea:focus {
+    width: 300px;
+    font-size: 3rem;
+  }
+
+  .formulario {
+    padding-top: 10px;
+  }
+
+  .tarjeta1 {
+    @extend.flex;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    justify-content: stretch;
+    z-index: 2;
+    font-size: 300rem;
+  }
+
+  .titulo {
+    padding-top: 3px;
+  }
+
+  .tarjeta1 {
+    margin-top: 33px;
+  }
+}
